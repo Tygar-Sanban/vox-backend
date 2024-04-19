@@ -15,9 +15,20 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "bundleIdentifier": "com.tsanhub.vox-backend",
+      "supportsTablet": true,
+      "infoPlist": {
+        "CFBundleURLTypes": [
+          {
+            "CFBundleURLSchemes": [
+              "com.googleusercontent.apps.1009384218726-q07nsb96l4t8gehmurijh8leqj67up7f"
+            ]
+          }
+        ]
+      }
     },
     "android": {
+      "package": "com.tygarsanban.voxbackend",
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
@@ -25,6 +36,11 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "91e57425-72ea-4312-ba75-e398a2ae534d"
+      }
     }
   }
 }
